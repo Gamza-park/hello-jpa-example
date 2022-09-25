@@ -10,11 +10,11 @@ public class OrderItem extends BaseEntity{
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn("ORDER_ID")
+    @JoinColumn(name = "ORDER_ID")
     private Order order;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn("ITEM_ID")
+    @JoinColumn(name = "ITEM_ID")
     private Item item;
 
     private int orderPrice;
